@@ -1,0 +1,259 @@
+/* Import font */
+@font-face { font-family: Undertale; src: url('../fonts/DeterminationMonoWeb.woff'); } 
+
+@font-face {
+    font-family: MonsterFriend;
+    src: url('../fonts/monsterfriendfore-webfont.woff2') format('woff2'),
+         url('../fonts/monsterfriendfore-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* MAIN */
+
+html{
+  scroll-behavior:smooth;
+}
+
+body {
+  background-color: rgb(14, 14, 14);
+  color: white;
+  font-family: Undertale;
+  font-size: 23px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden visible;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+a, a * {
+  cursor: url('../heart_cursor_link.cur'), auto !important;
+}
+
+a:hover {
+  color: yellow;
+}
+
+iframe {
+  border: none;
+}
+
+figure figcaption {
+  margin: .5em;
+  font-size: 15px;
+  text-align: center;
+  color: gray;
+}
+
+h3, h4 {
+  margin: .75em 0 .5em 0;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+hr {
+  margin: 1em 0 1em 0;
+}
+
+.centered {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  display: block !important;
+}
+
+.border {
+  border: 5px solid white;
+  margin: 1em;
+}
+
+.no-indent {
+  text-indent: 0 !important;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.white-text {
+  color: white;
+}
+
+.red {
+  color: red;
+}
+
+.flex {
+  display: flex;
+  object-fit: contain;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex img, .flex video {
+  height: 100%;
+  width: 300px
+}
+
+/* PAGE CONTENT */
+
+#page-content {
+  margin: .75em auto;
+  max-width: 1024px;
+  width: 80%;
+}
+
+#page-content h3 {
+  text-align: center;
+}
+
+#page-content p {
+  margin: .5em .5em 1em 1em;
+  text-indent: 1em;
+  line-height: 1.1;
+  font-size: 23px;
+  text-align: justify;
+  color: #DDD;
+}
+
+#to-game {
+  position: sticky;
+  bottom: 10%;
+}
+
+/* HEADER ELEMENTS */
+
+header {
+  background-color: black;
+  text-align: center;
+  padding: .75em 0 .75em 0;
+  overflow: hidden;
+}
+
+#logo {
+  font-family: MonsterFriend;
+  font-weight: normal;
+  font-size: 55px
+}
+
+
+header h1, header h2 {
+  margin: .3em 0 .3em 0;
+}
+
+/* nav bar */
+
+#navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 0px;
+  padding: .50em;
+  z-index: 1;
+}
+
+#navbar nav {
+  width: calc(max(75%, 75vw));
+  max-width: 1000px;
+}
+
+#navbar nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+/* FOOTER ELEMENTS */
+
+footer {
+  color: rgb(133, 133, 133);
+  background-color: rgb(0, 0, 0);
+  bottom: 0;
+  width: 100%;
+  font-size: 23px;
+  padding: .75em 0 1em 0;
+  margin-top: auto;
+  overflow: hidden;
+}
+
+footer div {
+  width: 80%;
+}
+
+/* Other */
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: url('../heart_cursor.cur'), auto;
+} 
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+  margin-bottom: .5em;
+}
+
+input, textarea {
+  font: 1em Undertale;
+
+  width: 300px;
+  box-sizing: border-box;
+ 
+  border: 3px solid #fff;
+  background-color: black;
+  color: white;
+}
+
+input:focus, textarea:focus {
+  outline-color: white;
+  outline-width: 2px;
+  outline-style: solid;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+button {
+  background-color: #000000;
+  border: 5px solid orange;
+  font-family: Undertale;
+  color: orange;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  margin: 4px 2px;
+  cursor: url('../heart_cursor_link.cur'), auto !important;
+}
+
+button:hover {
+  border: 5px solid yellow;
+  color: yellow;
+}
